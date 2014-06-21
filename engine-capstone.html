@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Blogament</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+
+  <style>
+    .code { border-radius: 7px; border: 5px solid #000;}
+    .right { position: absolute; bottom: 40px; right: 40px; }
+    .left { position: absolute; bottom: 50px; left: 70px; }
+    .top { position: absolute; top: 50px; right: 70px; }
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+
+      <article class="nobackground">
+        <h1>
+          Blogament
+        </h1>
+        <br>
+        </h4>
+          A Rails Engine designed to provide its host with blogging and commenting features.
+        </h4>
+        <p>
+          Aimee Knight
+          <br>
+          June 27th, 2014
+          <img src="images/engine.png" width="50%" class="top"/>
+        </p>
+
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Final Capstone Goals:
+        </h3>
+        <ul>
+          <li>
+            Take my knowledge of Rails to a higher level by creating my own gem, which is itself a Rails app. Make my own magic!
+          </li>
+          <li>
+            Explore software design principles, specifically Service Oriented Architecture.
+          </li>
+          <li>
+            Dig deeper into TDD by relying heavily on RSpec Mocking, and the Capybara Webkit driver for testing JavaScript.
+          </li>
+          <img src="images/hat.png" width="25%" class="right"/>
+          <img src="images/dots.png" width="20%" class="left"/>
+        </ul>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          About Engines, the Blogament README, and a quick Demo.
+        </h3>
+        <p>
+          Duplication is the root of all evil! Engines can reduce errors and speed up development.
+        </p>
+        <p>
+          Gems = reusuable code
+        </p>
+        <p>
+          Engines = reusable code with a user interface (engine.rb = application.rb)
+        </p>
+        <p>
+          Reusuable classes are put in the engine's namespace, keeping the 'business domain' isolated.
+        </p>
+        <img src="images/devil.png" width="25%" class="right"/>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+            Rake tasks and creating my own generators
+            <br><br><img src="images/generator.png" width="70%" class="code"/>
+          </li>
+        </ul>
+      </article>
+      <article class="nobackground">
+        <ul>
+          <li>
+            Rake tasks and creating my own generators
+            <br><br><img src="images/rake.png" width="99%" class="code"/>
+          </li>
+        </ul>
+      </article>
+      <article class="nobackground">
+        <ul>
+          <li>
+            TDD - Mocking the <code>current_user</code> & configuring Travis.yml
+            <br><br><img src="images/mock.png" width="95%" class="code"/>
+            <br><br><img src="images/travis.png" width="50%" class="code"/>
+          </li>
+          <li>
+            Namespace resolution
+            <br><br><img src="images/namespace.png" width="90%" class="code"/>
+          </li>
+          <li>
+            Open Classing
+          </li>
+        </ul>
+      </article>
+
+
+      <article class="nobackground">
+        <h3>
+          Thank you!
+        </h3>
+
+        <p>
+        Questions?
+        </p>
+        <ul>
+          <li>
+            <a href='http://www.google.com'>AimeeMarieKnight@gmail.com</a>
+          </li>
+          <li>
+            <a href='http://www.google.com'>https://github.com/AimeeKnight/Blogament</a>
+          </li>
+          <img src="images/ruby.png" width="30%" class="right"/>
+        </ul>
+      </article>
+
+    </section>
+
+  </body>
+</html>
