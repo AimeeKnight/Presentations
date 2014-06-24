@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <!--
@@ -23,7 +22,8 @@
   </head>
 
   <style>
-    .code { border-radius: 7px; border: 5px solid #000;}
+    .code { border-radius: 7px; border: 5px solid #000; margin: 10px 0px 10px 0px; }
+    li > code { color: #ecf0f1; background-color: #7f8c8d; border-radius: 7px; padding: 5px; margin-bottom: 15px; font-size: 20px; !important}
     .right { position: absolute; bottom: 40px; right: 40px; }
     .left { position: absolute; bottom: 50px; left: 70px; }
     .top { position: absolute; top: 40px; right: 60px; }
@@ -97,36 +97,58 @@
         </h3>
         <ul>
           <li>
-            Rake tasks and creating my own generators
-            <br><br><img src="images/generator.png" width="70%" class="code"/>
+            Creating my own generators<br><br>
+            <code>lib/generators/blogament/install_generator.rb</code><br>
+            <img src="images/generator.png" width="70%" class="code"/>
           </li>
         </ul>
       </article>
       <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
         <ul>
           <li>
-            Rake tasks and creating my own generators
-            <br><br><img src="images/rake.png" width="99%" class="code"/>
+          Hooking into the Engine with a Rake task<br><br>
+          <code>lib/tasks/blogament_tasks.rake</code><br>
+            <img src="images/rake.png" width="100%" class="code"/>
+            <code>lib/blogament/blogament.rb</code><br>
+            <img src="images/author.png" width="37%" class="code"/>
           </li>
         </ul>
       </article>
       <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
         <ul>
           <li>
-            TDD - Mocking the <code>current_user</code> & configuring Travis.yml
-            <br><br><img src="images/mock.png" width="95%" class="code"/>
-            <br><br><img src="images/travis.png" width="50%" class="code"/>
-          </li>
-          <li>
-            Namespace resolution
-            <br><br><img src="images/namespace.png" width="90%" class="code"/>
-          </li>
-          <li>
-            Open Classing
+            TDD - Mocking the <code>current_user</code><br><br>
+            <code>spec/support/blogament/sessions.rb</code>
+            <img src="images/mock.png" width="95%" class="code"/>
           </li>
         </ul>
       </article>
 
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+            TDD - configuring Travis.yml<br><br>
+            <code>.travis.yml</code><br>
+            <img src="images/travis.png" width="50%" class="code"/>
+          </li>
+          <br>
+          <br>
+          <li>
+            Namespace resolution<br><br>
+            <code>app/models/blogament/post.rb</code>
+            <img src="images/namespace.png" width="90%" class="code"/>
+          </li>
+        </ul>
+      </article>
 
       <article class="nobackground">
         <h3>
