@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Blogament</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+
+  <style>
+    .code { border-radius: 7px; border: 5px solid #000; margin: 10px 0px 10px 0px; }
+    li > code { color: #ecf0f1; background-color: #7f8c8d; border-radius: 7px; padding: 5px; margin-bottom: 15px; font-size: 20px; !important}
+    .right { position: absolute; bottom: 40px; right: 40px; }
+    .left { position: absolute; bottom: 50px; left: 70px; }
+    .top { position: absolute; top: 40px; right: 60px; }
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+
+      <article class="nobackground">
+        <h1>
+          Blogament
+        </h1>
+        <br>
+        </h4>
+          A Rails Engine designed to provide its host with blogging and commenting features.
+        </h4>
+        <p>
+          Aimee Knight
+          <br>
+          June 27th, 2014
+          <img src="images/engine.jpg" width="40%" class="top"/>
+        </p>
+
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Final Capstone Goals:
+        </h3>
+        <ul>
+          <li>
+            Expand on my knowledge of Rails by creating my own gem, which is itself a Rails app. Learn how the magic works...
+          </li>
+          <li>
+            Explore ways of making applications more modular.
+          </li>
+          <li>
+            Dig deeper into TDD by relying heavily on RSpec Mocking, and the Capybara Webkit driver for testing JavaScript.
+          </li>
+          <img src="images/hat.png" width="20%" class="right"/>
+          <img src="images/dots.png" width="20%" class="left"/>
+        </ul>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Technolody & Techniques, a quick demo, and the Blogament README.
+        </h3>
+        <ul>
+          <li>
+            Searching with acts-as-taggable-on & Elasticsearch
+          </li>
+          <li>
+            Background jobs with SideKiq, RedisToGo and Unicorn
+          </li>
+          <li>
+            Duplication is the root of all evil! <br> Engines can reduce errors and speed up development.
+            Reusable classes are put in the engine's namespace and can then be isolated from the host application.
+          </li>
+          <li>
+            Gems = reusable code
+          </li>
+          <li>
+            Engines = reusable code with a user interface <br> (engine.rb = application.rb)
+          </li>
+        </ul>
+        <img src="images/devil.png" width="20%" class="right"/>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+            Creating a generator<br><br>
+            <code>$ rails g blogament:install</code><br><br>
+            <code>lib/generators/blogament/install_generator.rb</code><br>
+            <img src="images/generator.png" width="70%" class="code"/><br>
+            <img src="images/install.png" width="60%" class="code"/><br>
+          </li>
+        </ul>
+      </article>
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+          Hooking into the Engine with a Rake task<br><br>
+          <code>lib/tasks/blogament_tasks.rake</code><br>
+            <img src="images/rake.png" width="100%" class="code"/>
+            <code>lib/blogament/blogament.rb</code><br>
+            <img src="images/author.png" width="37%" class="code"/>
+          </li>
+        </ul>
+      </article>
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+            TDD - Mocking the <code>current_user</code><br><br>
+            <code>spec/support/blogament/sessions.rb</code>
+            <img src="images/mock.png" width="95%" class="code"/>
+          </li>
+        </ul>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Lessons Learned:
+        </h3>
+        <ul>
+          <li>
+            TDD - setting up Travis CI<br>
+            <p>WebKit requires a display, so when using Travis RSpec is prepended with Xvfb (X virtual framebuffer).</p>
+            <br>
+            <code>.travis.yml</code><br>
+            <img src="images/travis.png" width="50%" class="code"/>
+          </li>
+          <br>
+          <li>
+            Namespace resolution<br><br>
+            <code>app/models/blogament/post.rb</code>
+            <img src="images/namespace.png" width="90%" class="code"/>
+          </li>
+        </ul>
+      </article>
+
+      <article class="nobackground">
+        <h3>
+          Thank you!
+        </h3>
+
+        <p>
+        Questions?
+        </p>
+        <ul>
+          <li>
+            <a href='http://www.google.com'>AimeeMarieKnight@gmail.com</a>
+          </li>
+          <li>
+            <a href='http://www.google.com'>https://github.com/AimeeKnight/Blogament</a>
+          </li>
+          <img src="images/ruby.png" width="30%" class="right"/>
+        </ul>
+      </article>
+
+    </section>
+
+  </body>
+</html>
